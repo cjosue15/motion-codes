@@ -3,7 +3,7 @@ import { Code, LezerHighlighter } from "@motion-canvas/2d";
 import { parser } from "@lezer/javascript";
 import { gruvboxDark } from "@uiw/codemirror-theme-gruvbox-dark";
 
-import example from "./scenes/angular-19/standalone?scene";
+import resource from "./scenes/angular-19/resource?scene";
 
 Code.defaultHighlighter = new LezerHighlighter(
   parser.configure({
@@ -13,5 +13,5 @@ Code.defaultHighlighter = new LezerHighlighter(
 );
 
 export default makeProject({
-  scenes: [example],
+  scenes: [resource],
 });
